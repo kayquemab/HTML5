@@ -8,6 +8,13 @@
 
 </head>
 <script language="javascript" src="_javascript/funcoes.js"></script>
+<script>
+    function calc_total() {
+        var qtd = parseInt(document.getElementById('cQtd').value);
+        tot = qtd * 1500;
+        document.getElementById('cTot').value = tot;
+    }
+</script>
 
 <body>
     <div id="interface">
@@ -15,7 +22,7 @@
         <header id="cabecalho">
 
             <hgroup>
-                <h1>Glass</h1>
+                <h1>Google Glass</h1>
                 <h2>A revolução do Google está chegando</h2>
             </hgroup>
 
@@ -52,10 +59,10 @@
                 </header>
 
 
-                <form method="post" id="fContato" action="mailto:kayquemiqueias17@gmail.com">
+                <form method="post" id="fContato" action="mailto:kayquemiqueias17@gmail.com" oninput="calc_total()">
 
                     <!-- Identificação do Usuário -->
-                    <fieldset>
+                    <fieldset id="usuario">
                         <legend id="usuario">Identificação do Usuário</legend>
 
                         <p>
@@ -77,7 +84,7 @@
                         </p>
 
                         <!-- Sexo -->
-                        <fieldset>
+                        <fieldset id="sexo">
                             <legend>Sexo:</legend>
                             <input type="radio" name="tSexo" id="cMasc" />
                             <label for="cMasc">Masculino</label><br>
@@ -93,7 +100,7 @@
                     </fieldset>
 
                     <!-- Endereço do Usuário -->
-                    <fieldset>
+                    <fieldset id="endereco">
                         <legend id="endereco">Endereço do Usuário</legend>
 
                         <p>
@@ -146,7 +153,7 @@
                     </fieldset>
 
                     <!-- Mensagem do Usuário -->
-                    <fieldset>
+                    <fieldset id="mensagem">
                         <legend id="mensagem">Mensagem do Usuário</legend>
 
                         <p>
@@ -156,20 +163,37 @@
 
                         <p>
                             <label for="cMsg">Mensagem:</label><br />
-                            <textarea name="tMsg" id="cMsg" cols="45" rows="5"
+                            <textarea name="tMsg" id="cMsg" cols="35" rows="5"
                                 placeholder="Deixe aqui sua mensagem:"></textarea>
                         </p>
                     </fieldset>
 
-                    <fieldset>
+                    <!-- Quero um Google Glass -->
+                    <fieldset id="pedido">
                         <legend id="pedido">Quero um Google Glass</legend>
-                        <p><label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
-                        <p><label for="cCor">Cor:</label></p>
-                        <p><label for="cQtd">Quantidade:</label></p>
-                        <p><label for="cTot">Preço Total: R$</label></p>
+
+                        <p>
+                            <input type="checkbox" name="tPed" id="cPed" />
+                            <label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label>
+                        </p>
+
+                        <p>
+                            <label for="cCor">Cor:</label>
+                            <input type="color" name="tCor" id="cCor" />
+                        </p>
+
+                        <p>
+                            <label for="cQtd">Quantidade:</label>
+                            <input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0" />
+                        </p>
+
+                        <p>
+                            <label for="cTot">Preço Total: R$</label>
+                            <input type="text" name="tTot" id="cTot" placeholder="Total a pagar:" readonly />
+                        </p>
                     </fieldset>
 
-                    [BOTÃO ENVIAR]
+                    <input type="image" name="Enviar" src="_imagens/botao-enviar.png">
                 </form>
 
             </article>
