@@ -7,7 +7,7 @@ Este é um projeto de site desenvolvido durante as aulas do Curso em Vídeo, com
 ### 📂 Estrutura
 
 📂 Main<br>
-├── 📂 docs<br>
+├── 📂 Site do Google Glass<br>
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── 📂 _css<br>
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── 📂 _fonts<br>
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── 📂 _imagens<br>
