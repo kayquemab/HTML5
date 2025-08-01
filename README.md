@@ -2,7 +2,7 @@
 
 ### 📌 Sobre
 
-Este é um projeto de site desenvolvido durante as aulas do Curso em Vídeo, com foco em HTML5, CSS3 e JavaScript. O site apresenta um modelo fictício dos óculos Google Glass, explorando conceitos modernos de web design...
+Este é um projeto de site desenvolvido durante as aulas do Curso em Vídeo, com foco em HTML5, CSS3 e JavaScript. O site apresenta um modelo fictício dos óculos Google Glass, explorando conceitos modernos de web design.
 
 ### 📂 Estrutura
 
